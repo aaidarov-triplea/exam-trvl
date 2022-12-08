@@ -1,0 +1,39 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh - 57px);
+}
+.hero > h1,
+.hero > p {
+    font-weight: 400;
+    color: var(--text-color);
+}
+.hero > h1 {
+    font-size: 150px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.hero > p {
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    margin-top: 70px;
+}
+/* =========Adaptive for tablet=========== */
+@media screen and (max-width: 1055px) {
+    .hero > h1 {
+        font-size: 90px;
+    }
+}
+/* =======Adaptive for phone=================== */
+@media screen and (max-width: 767px) {
+    .hero > h1 {
+        font-size: 40px;
+    }
+    .hero > p {
+        font-size: 20px;
+    }
+}

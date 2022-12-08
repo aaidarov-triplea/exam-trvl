@@ -1,0 +1,93 @@
+.travel {
+    width: 100%;
+    background-color: var(--black-bg);
+}
+
+.travel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 740px;
+}
+.content {
+    display: flex;
+}
+
+
+.travel__info {
+    width: 348px;
+    margin-right: 157px;
+    color: var(--text-color);
+    letter-spacing: 0.1em;
+}
+
+.travel__info > h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 37px;
+}
+.travel__info > p {
+    font-size: 18px;
+
+}
+
+.travel__pictures {
+    display: flex;
+    align-items: center;
+}
+.pictures-small {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+.pictures-small > img:last-child {
+    margin-top: 22px;
+}
+
+
+
+/* =======Adaptive for tablet===============*/
+@media screen and (max-width: 1108px) {
+    .travel-inner {
+        height: 959px;
+    }
+    .content {
+        display: block;
+    }
+    .travel__info {
+        margin: 0 auto;
+        width: 591px;
+        margin-bottom: 59px;
+    }
+}
+
+/* =======Adaptive for phone=================== */
+@media screen and (max-width: 767px) {
+    .travel-inner {
+        height: 1442px;
+    }
+    .content {
+        display: block;
+    }
+    .travel__info {
+        margin: 0 auto;
+        width: 292px;
+        margin-bottom: 59px;
+    }
+    .travel__info > h2 {
+        font-size: 28px;
+    }
+    .travel__info > p {
+        font-size: 16px;
+    }
+    .travel__pictures {
+        display: block;
+    }
+    .travel__pictures > img {
+        margin-top: 22px;
+        width: 292px;
+    }
+    .pictures-small {
+        margin-right: 0;
+    }
+}
