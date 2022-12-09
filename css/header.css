@@ -40,11 +40,11 @@ header {
     display: none;
     cursor: pointer;
 }
-.header__humburger img:hover {
-    background-color: var(--hover-color);
+.header__humburger:hover path {
+    fill: var(--hover-color);
 }
-.header__humburger img:active {
-    background-color: var(--active-color);
+.header__humburger:active path {
+    fill: var(--active-color);
 }
 /*=======Adaptive for tablet===============*/
 @media screen and (max-width: 1023px) {
